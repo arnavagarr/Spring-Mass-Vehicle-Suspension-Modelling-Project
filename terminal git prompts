@@ -1,0 +1,8 @@
+git add .
+git commit -m ""
+git push origin master
+
+git add .
+git commit -m "explain what u did"
+git branch (master/main) -- only to see which branch ur in
+git push origin master/main
