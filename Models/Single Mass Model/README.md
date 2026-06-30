@@ -1,4 +1,4 @@
-# Single-Mass Spring Damper System:
+# Single Mass Spring-Damper System:
 
 In this 1-DOF Model,it includes a simplified model of a single mass moving along a single axis, the forces that govern motion include a spring(k) and a damper(c)
 
