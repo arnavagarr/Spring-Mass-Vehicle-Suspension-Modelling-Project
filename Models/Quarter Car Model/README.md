@@ -6,6 +6,9 @@ This diagram depicts a spring-damper system within a quarter car:
 
 <img width="520" height="454" alt="2-Figure2-1" src="https://github.com/user-attachments/assets/05fadfb6-512e-4f4d-894d-b6b54cea8d37" />
 
+Likewise,The quarter car model can also be denoted by the second-order ODE:
+
+	my’’ + cy’ + ky = F(t)
 
 There are 4 state variables in this model:
 
