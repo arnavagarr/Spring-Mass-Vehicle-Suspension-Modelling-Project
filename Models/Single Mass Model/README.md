@@ -7,7 +7,7 @@ This diagram depicts a single mass spring-damper system:
 
 <img width="253" height="243" alt="images" src="https://github.com/user-attachments/assets/7804803f-1495-4d15-bf0b-a63ae59b0c47" />
 
-The model is covered by the second-order ODE:
+The model can be denoted by the second-order ODE:
 
 		my’’ + cy’ + ky = F(t)
 
