@@ -12,6 +12,6 @@ There are 4 state variables in this model:
 In this model it is converted into four first order ODEs:
 
   	x’1 = x2
-  	x’2  = [1/m]*[-ks(x1-x3)-cs(x2-x4)]
+  	x’2 = [1/m]*[-ks(x1-x3)-cs(x2-x4)]
   	x’3 = x4
-  	x’4  = [1/m]*[ks(x1-x3)+cs(x2-x4)-k1(x3-r)]
+  	x’4 = [1/m]*[ks(x1-x3)+cs(x2-x4)-k1(x3-r)]
