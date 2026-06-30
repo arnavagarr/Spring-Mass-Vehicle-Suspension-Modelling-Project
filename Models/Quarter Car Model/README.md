@@ -1,4 +1,4 @@
-# Quarter Car:
+# Quarter Car Spring Damper System:
 
 It expands from a single mass to a 2-DOF model moving along a single vertical axis, the forces that govern this particular system have been split into a suspensions force and a tire force.
 
