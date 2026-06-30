@@ -9,14 +9,14 @@ This diagram depicts a single mass spring-damper system:
 
 The model can be denoted by the second-order ODE:
 
-		my’’ + cy’ + ky = F(t)
+	my’’ + cy’ + ky = F(t)
 
 We define two state space variables representing displacement(x1) and velocity(x2)
 
 This equation must be converted into two first order ODEs:
 
-		x’1 = x2
+	x’1 = x2
 
-		x’2 = x’’1 = (1/m)*(F(t)-cx2-kx1)
+	x’2 = x’’1 = (1/m)*(F(t)-cx2-kx1)
 
 
