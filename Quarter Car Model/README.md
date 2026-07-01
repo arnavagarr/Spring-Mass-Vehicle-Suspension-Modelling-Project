@@ -23,5 +23,18 @@ In this model it is converted into four first order ODEs:
   	x’2 = [1/m]*[-ks(x1-x3)-cs(x2-x4)]
   	x’3 = x4
   	x’4 = [1/m]*[ks(x1-x3)+cs(x2-x4)-k1(x3-r)]
-    
 
+This is a image includes a position of road position against time as well as a graph plot of the velocity and position on both a sprung and unsprung graph against time using the following values:
+
+	ms(spring mass) = 250
+	mu(unsprung mass) = 40
+	cs(damping coeffecient spring) = 1000
+	kt(tyre spring constant) = 150000
+	ks(sprung section spring constant) = 15000
+	time = 10
+	intial sprung positon= 5
+	intial sprung velocity= 2
+	intial unsprung positon= 3
+	intial unsprung velocity= 2
+
+<img width="1242" height="556" alt="Screen Shot 2026-07-01 at 5 19 05 PM" src="https://github.com/user-attachments/assets/c069b7ed-f69f-4579-b23f-a8bfee7acab2" />
