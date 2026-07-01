@@ -33,9 +33,9 @@ In this model it is converted into four first order ODEs:
 This is a image includes a position of road position against time as well as a graph plot of the velocity and position on both a sprung and unsprung graph against time using the following values:
 
 	ms(spring mass) = 250
-	mu(unsprung mass) = 40
+	mu(unsprung mass) = 80
 	cs(damping coeffecient spring) = 1000
-	kt(tyre spring constant) = 150000
+	kt(tyre spring constant) = 75000
 	ks(sprung section spring constant) = 15000
 	time = 10
 	intial sprung positon= 5
