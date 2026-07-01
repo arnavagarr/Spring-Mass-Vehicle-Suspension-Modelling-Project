@@ -20,3 +20,25 @@ This equation must be converted into two first order ODEs:
 	x’2 = x’’1 = (1/m)*(F(t)-cx2-kx1)
 
 
+This is a graph plot of the velocity and position against time using the following values:
+
+	m(mass) = 10
+	c(damping coefficient) = 75
+	k(spring constant) = 1000
+	initial position = 1
+	initial velocity = 0(at rest)
+	time span = 2
+
+<img width="586" height="449" alt="image" src="https://github.com/user-attachments/assets/579ee851-6927-48f4-9cf0-ba73759fc0c4" />
+
+This is the same graph plot of the velocity and position against time using different values this time:
+
+	m(mass) = 100
+	c(damping coefficient) = 250
+	k(spring constant) = 10000
+	initial position = 1
+	initial velocity = 0(at rest)
+	time span = 7.5
+	
+<img width="572" height="449" alt="Screen Shot 2026-07-01 at 12 04 15 PM" src="https://github.com/user-attachments/assets/9ac788b1-af92-495d-a0d2-ada697c57880" />
+
