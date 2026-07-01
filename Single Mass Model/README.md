@@ -29,7 +29,7 @@ This is a graph plot of the velocity and position against time using the followi
 	initial velocity = 0(at rest)
 	time span = 2
 
-<img width="586" height="449" alt="image" src="https://github.com/user-attachments/assets/579ee851-6927-48f4-9cf0-ba73759fc0c4" />
+<img width="894" height="652" alt="Screen Shot 2026-07-01 at 5 29 48 PM" src="https://github.com/user-attachments/assets/0b8a58b7-1320-4942-897d-3a1707448e78" />
 
 Another graph with the same system using different values this time:
 
@@ -40,5 +40,4 @@ Another graph with the same system using different values this time:
 	initial velocity = 0(at rest)
 	time span = 7.5
 	
-<img width="572" height="449" alt="Screen Shot 2026-07-01 at 12 04 15 PM" src="https://github.com/user-attachments/assets/9ac788b1-af92-495d-a0d2-ada697c57880" />
-
+<img width="936" height="594" alt="Screen Shot 2026-07-01 at 5 33 30 PM" src="https://github.com/user-attachments/assets/e521bb64-57ff-451e-a4e8-de020e67a20f" />
