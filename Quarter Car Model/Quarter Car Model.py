@@ -17,14 +17,16 @@ def r(t):
 
 #returns values of dx1dt,dx2dt,dx3dt,dx4dt
 def quarter_car(t, state):
+
     x1 = state[0] #body pos
     x2 = state[1] #body vel
     x3 = state[2] #wheel pos
     x4 = state[3] #wheel vel
+    
     dx1dt = x2 
-    dx2dt =((1/ms)*(ks*(x3 - x1) - cs*(x4 - x2)))
+    dx2dt =(-ks*(x1 - x3) - cs*(x2 - x4)) / ms
     dx3dt = x4
-    dx4dt = ((-ks*(x3 - x1) - cs*(x4 - x2) + kt*(r(t) - x3))*(1/mu))
+    dx4dt = ( ks*(x1 - x3) + cs*(x2 - x4) - kt*(x3 - r(t)) ) / mu
 
     return [dx1dt,dx2dt,dx3dt,dx4dt]
 
@@ -32,11 +34,33 @@ t_eval = np.linspace(0, 10, 500)
 
 # Solve
 solution = solve_ivp(quarter_car, t_span, y0, t_eval=t_eval)
+road = r(solution.t)
 
-#Plot
 
-plt.plot(solution.t, solution.y[0], label='Body(sprung)')
-plt.plot(solution.t, solution.y[2], label='Wheel(unsprung)')
-plt.xlabel("Time/(s)")
-plt.ylabel("Position")
+#plot section
+
+figure , axis = plt.subplots(1, 3)
+
+axis[0].plot(solution.t, solution.y[0], label='Body(sprung)' ,color ='red')
+axis[0].plot(solution.t, solution.y[2], label='Wheel(sprung)' ,color ='green')
+axis[0].legend()
+axis[1].plot(solution.t, solution.y[1], label='Body(unsprung)' ,color ='blue')
+axis[1].plot(solution.t, solution.y[3], label='Wheel(unsprung)' ,color ='orange')
+axis[1].legend()
+axis[2].plot(solution.t, road, label='Road Position' ,color ='black')
+axis[2].legend()
+
+axis[0].set_xlabel("Time/(s)")
+axis[0].set_ylabel("Position/Velocity(Sprung)")
+
+axis[1].set_xlabel("Time/(s)")
+axis[1].set_ylabel("Position/Velocity(Unsprung)")
+
+axis[2].set_xlabel("Time/(s)")
+axis[2].set_ylabel("Road Position")
+
+axis[0].set_xlabel("Time/(s)")
+axis[0].set_ylabel("Position")
+
+
 plt.show()
