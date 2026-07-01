@@ -31,7 +31,7 @@ This is a graph plot of the velocity and position against time using the followi
 
 <img width="586" height="449" alt="image" src="https://github.com/user-attachments/assets/579ee851-6927-48f4-9cf0-ba73759fc0c4" />
 
-This is the same graph plot of the velocity and position against time using different values this time:
+Another graph with the same system using different values this time:
 
 	m(mass) = 100
 	c(damping coefficient) = 250
