@@ -43,4 +43,4 @@ This is a image includes a position of road position against time as well as a g
 	intial unsprung positon= 3
 	intial unsprung velocity= 2
 
-<img width="1242" height="556" alt="Screen Shot 2026-07-01 at 5 19 05 PM" src="https://github.com/user-attachments/assets/c069b7ed-f69f-4579-b23f-a8bfee7acab2" />
+<img width="1131" height="692" alt="Screen Shot 2026-07-01 at 5 50 27 PM" src="https://github.com/user-attachments/assets/2825cf86-914c-4366-be7c-9a2933a0335e" />
