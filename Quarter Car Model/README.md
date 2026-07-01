@@ -12,9 +12,6 @@ Note:
 	Sprung Mass - Car body,Engine,Passengers,Cargo
 	Unsprung Mass - Wheel,Tyre,Brake assembly,Parts of the suspension system
 
-Likewise,The quarter car model can also be denoted by the second-order ODE:
-
-	my’’ + cy’ + ky = F(t)
 
 There are 4 state variables in this model:
 
