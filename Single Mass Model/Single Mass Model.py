@@ -1,41 +1,37 @@
 import numpy as np
-from scipy.integrate import odeint
+import matplotlib.pyplot as plt
 from scipy.integrate import solve_ivp
-import matlabplot.py as plt
 
-
-#Initialization section for the variables:
+# Initialization for values
 m = 10
-c = 5
-k = 2
-y0 = [1,0]
-t_span = (0,10)
+c = 75
+k = 1000
+y0 = [1, 0]
+t_span = (0, 2)
 
-
-
-#Function that returns dx/dt
+# ODE system that returns values of dx1dt and dx2dt
 def system(t, state):
-
-    x1 = state[0] #position
-    x2 = state[1] #velocity
+    x1 = state[0]
+    x2 = state[1]
 
     dx1dt = x2
-    dx2dt = (-1/m) * (c*x2 + k*x1)
+    dx2dt = (-c*x2 + -k*x1)/m 
 
-    return [dx1dt,dx2dt]
+    return [dx1dt, dx2dt]
 
-#Solve ODE
-t_eval = np.linspace(0,10,500)
+# Time evaluation points
+t_eval = np.linspace(0, 2, 500)
 
+# Solve
 solution = solve_ivp(system, t_span, y0, t_eval=t_eval)
-#Plot the results
-import matplotlib.pyplot as plt
 
-plt.plot(solution.y[0], solution.y[1])
+#Plot
+plt.plot(solution.t, solution.y[0])
+plt.plot(solution.t, solution.y[1])
 
-plt.xlabel("Position")
-plt.ylabel("Velocity")
-plt.title("Phase Space: Velocity vs Position")
+plt.xlabel("Time")
+plt.ylabel("Position/Velocity")
+plt.title("Velocity and Position against Time")
 plt.grid(True)
 
 plt.show()
