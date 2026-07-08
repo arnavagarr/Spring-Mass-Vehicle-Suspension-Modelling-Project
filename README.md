@@ -6,7 +6,6 @@ In order to navigate this project,I have chosen to create this with multiple mod
 
 	-Single mass model
 	-Quarter car model
-	-Half car model(In Progress)
 
 Each model has been assigned folder which includes:
 
