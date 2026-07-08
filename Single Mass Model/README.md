@@ -4,8 +4,7 @@ In this 1-DOF Model,it includes a simplified model of a single mass moving along
 
 This diagram depicts a single mass spring-damper system:
 
-
-<img width="253" height="243" alt="images" src="https://github.com/user-attachments/assets/7804803f-1495-4d15-bf0b-a63ae59b0c47" />
+<img width="391" height="520" alt="image" src="https://github.com/user-attachments/assets/52d7c13e-c0ef-4f0b-86d6-3b95d4c9f985" />
 
 The model can be denoted by the second-order ODE:
 
